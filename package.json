@@ -1,0 +1,69 @@
+{
+  "name": "github-gist-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@datorama/akita": "^5.2.5",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "axios": "^0.20.0",
+    "moment-timezone": "^0.5.31",
+    "react": "^16.14.0",
+    "react-cool-onclickoutside": "^1.5.7",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "3.4.3",
+    "react-syntax-highlighter": "^15.2.1",
+    "rxjs": "^6.6.3",
+    "typescript": "~3.7.2",
+    "uuidv4": "^6.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier --write src/**/*.{js,ts,tsx}",
+    "lint": "eslint src/**/*.{js,ts,tsx} --quiet --fix"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@datorama/akita-ngdevtools": "^5.0.3",
+    "dotenv": "^8.2.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  }
+}
